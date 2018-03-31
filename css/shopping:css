@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%; }
+
+#sp_header {
+  text-align: center;
+  margin-top: 29px; }
+  #sp_header #sp_header_li li {
+    display: inline-block;
+    list-style: none;
+    padding: 6px; }
+
+#pc_header_li li {
+  display: inline-block;
+  list-style: none; }
+
+@media (min-width: 551px) {
+  header #sp_header {
+    display: none; } }
+@media (max-width: 550px) {
+  header #pc_header {
+    display: none; } }
+#eyecatch {
+  margin: 40px auto; }
+
+#newitems .newitems-box {
+  margin: 31px auto;
+  flex-wrap: wrap;
+  display: flex; }
+  #newitems .newitems-box .flex-container {
+    background-color: #ffffff;
+    width: 30%;
+    margin: auto; }
+
+#popularitems .popularitems-box {
+  margin: 31px auto;
+  flex-wrap: wrap;
+  display: flex; }
+  #popularitems .popularitems-box .flex-container {
+    background-color: #ffffff;
+    width: 30%;
+    margin: auto; }
+
+#shopping-guide {
+  margin: 36px auto; }
+  #shopping-guide .guide-box {
+    font-color: #887f69;
+    display: flex;
+    display: -webkit-flex;
+    box-sizing: border-box;
+    margin-top: 36px; }
+    #shopping-guide .guide-box .container {
+      background-color: #ffffff;
+      width: 48%; }
+
+/*# sourceMappingURL=shopping:css.map */
