@@ -40,7 +40,6 @@ background-color: #f9f8f6;
       li{
         display: inline-block;
         list-style: none;
-        padding: 6px;
       }
     }
   }
@@ -134,11 +133,15 @@ background-color: #f9f8f6;
   }
   #sp_newitem{
     text-align: center;
+    margin-top: 30px;
   }
 }
 @media(min-width: 550px){
   #sp_newitem{
     display: none;
+  }
+  #pc_newitem{
+    margin-top: 30px;
   }
 }
 
@@ -347,7 +350,9 @@ background-color: #f9f8f6;
       background-color: #ffffff;
       width: 48%;
       float: left;
+      margin:10px 5px 10px 7px;
     }
+    
     .right{
       background-color: #ffffff;
       width: 48%;
@@ -367,6 +372,7 @@ background-color: #f9f8f6;
       background-color: #ffffff;
       width: 48%;
       float: left;
+      margin: 10px 5px 10px 7px;
     }
     .right{
       background-color: #ffffff;
@@ -379,6 +385,9 @@ background-color: #f9f8f6;
       clear: both;
     }
   }
+  .more-btn{
+      min-margin:88px;
+    }
 }
 
 //footer
@@ -625,9 +634,6 @@ background-color: #f9f8f6;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap:wrap;
-  }
-  li{
-    width: 18%;
   }
 }  
 
