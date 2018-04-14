@@ -12,7 +12,8 @@ body {
   margin-top: 29px; }
   #sp_header #sp_header_li li {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    padding: 3px; }
 
 .sp_menu_toggle {
   width: 180px;
@@ -123,12 +124,13 @@ body {
 
 #shopping-guide h5 {
   color: #887f69;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 10px; }
 #shopping-guide h6 {
   color: #887f69; }
 
 #pc_guide img {
-  margin-top: 30px; }
+  margin-top: 10px; }
 
 #sp_guide img {
   margin-top: 30px; }
@@ -163,6 +165,9 @@ body {
     margin: 12px 12px;
     padding: 5px 10px;
     font-style: oblique; }
+
+.pagelink {
+  margin: 20px 0; }
 
 .sidebar {
   background-color: #887f69;
@@ -283,6 +288,23 @@ body {
     border-bottom-color: #e2ddd4;
     margin-bottom: 40px;
     padding: 20px; } }
+.owl-dot {
+  display: inline-block; }
+
+.owl-dot span {
+  width: 40px;
+  height: 4px;
+  background: #b0b0b0;
+  display: block;
+  margin: 5px; }
+
+.owl-dot .active span {
+  width: 40px;
+  height: 4px;
+  background: #9d1a2d;
+  display: block;
+  margin: 5px; }
+
 .pankuzu {
   font-size: 11px;
   line-height: 2em;
@@ -332,21 +354,26 @@ body {
 
 @media (min-width: 550px) {
   .sp_saikin {
-    display: none; } }
+    display: none; }
+
+  .pc_saikin {
+    padding: 20px 0; } }
 @media (max-width: 549px) {
   .pc_saikin {
     display: none; }
 
   .sp_saikin img {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    padding: 20px 0; } }
 #saikin-pic {
-  margin: 31px auto;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 12px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 10px; }
 
 @media (min-width: 550px) {
   #saikin-pic .flex-container {
@@ -355,11 +382,16 @@ body {
     margin: auto; } }
 @media (max-width: 549px) {
   #saikin-pic .flex-container {
-    width: 47%;
+    width: 50%;
     background-color: #ffffff;
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #saikin-pic .flex-container img {
+      max-width: 93%; } }
 #product {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-bottom: 10px; }
   #product .product-midashi {
     margin: 30px 30px;
     padding-bottom: 50px;
@@ -386,7 +418,6 @@ body {
   float: left; }
 
 .product_container {
-  float: left;
   margin: 10px; }
   .product_container ul {
     list-style: none; }
@@ -433,9 +464,13 @@ body {
 
   #list_img img {
     width: 50%;
-    float: left; } }
+    float: left;
+    padding: 3px; } }
 @media (max-width: 550px) {
   #display_img {
+    width: 100%; }
+
+  #display_img img {
     width: 100%; }
 
   #list_img {
@@ -443,22 +478,34 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+
+  #list_img li {
+    width: 20%; }
+
+  #list_img img {
+    padding: 3px; } }
 table {
   color: #887f69;
-  width: 100%;
+  width: 90%;
   text-align: center;
   font: #887f69;
-  border-color: #887f69;
-  border-bottom-color: #887f69; }
+  border-bottom: 1px solid #e2ddd4; }
   table th {
-    text-align: center; }
+    text-align: center;
+    font-weight: normal;
+    width: 30%;
+    background-color: #f9f9f5; }
   table td {
     text-align: center;
-    border-bottom-color: #887f69; }
+    border-bottom-color: #E1E1E1; }
+  table tr {
+    border-top: 1px solid #e2ddd4;
+    border-left: 1px solid #e2ddd4;
+    border-right: 1px solid #e2ddd4; }
 
 thead {
-  background-color: #e2ddd4; }
+  background-color: #f9f8f6; }
 
 .shouhinn-setumei {
   clear: both; }
@@ -469,7 +516,8 @@ thead {
   color: red;
   font-size: 24px;
   margin-right: 10px;
-  font-style: oblique; }
+  font-style: oblique;
+  font-weight: normal; }
 .price p {
   border-top: solid #e2ddd4;
   border-top-width: 1px;
@@ -511,8 +559,9 @@ thead {
 
   .add-cart {
     float: right;
-    width: 50%;
-    text-align: right; }
+    width: 35%;
+    text-align: right;
+    margin-right: 60px; }
 
   #product-column .clearfix::after {
     content: '';
@@ -531,5 +580,8 @@ thead {
   content: "";
   display: block;
   clear: both; }
+
+#saikin-area {
+  background-color: white; }
 
 /*# sourceMappingURL=shopping.css.map */
