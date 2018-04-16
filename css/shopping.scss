@@ -112,7 +112,6 @@ background-color: #f9f8f6;
 
 #newitems{
   .newitems-box{
-    margin: 31px auto;
     flex-wrap: wrap;
     display: flex;
     font-size: 12px;
@@ -145,10 +144,13 @@ background-color: #f9f8f6;
     margin-top: 30px;
   }
 }
+.sp-title img{
+      height: 20px;
+      margin: 32px auto;
+    }
 
 #popularitems{
   .popularitems-box{
-    margin: 31px auto;
     flex-wrap: wrap;
     display: flex;
     font-size: 12px;
@@ -178,14 +180,12 @@ background-color: #f9f8f6;
   }
 }
 #shopping-guide{
-  margin: 36px auto;
   background-color: $base;
   
   .guide-box{
     display: flex;
     display: -webkit-flex;
     box-sizing: border-box;
-    margin-top: 36px;
     }
   }
 
@@ -208,6 +208,7 @@ background-color: #f9f8f6;
   }
   h6{
     color: $brown;
+    font-weight: bold;
   }
 }
 #pc_guide{
@@ -215,17 +216,12 @@ background-color: #f9f8f6;
   margin-top: 10px;
   }
 }
-#sp_guide{
-  img{
-  margin-top: 30px;
-  }
-}
+
 @media(max-width: 550px){
   .guide-box{
     flex-direction: column;
     width: 100%;
     .container{
-      margin-top: 10px;
       margin-bottom: 10px;
     }
   }
@@ -262,6 +258,12 @@ background-color: #f9f8f6;
     font-style: oblique;
   }
 }
+@media(max-width: 550px){
+  #search img{
+    display: none;
+  }
+}
+
 .pagelink{
   margin:20px 0;
 }
@@ -526,20 +528,19 @@ background-color: #f9f8f6;
     .sp_saikin{
       img{
       display: block;
-      margin: 0 auto;
-      padding:20px 0;
+      margin: 37px auto;
+      height:30px;
+      
     }
   }
 }
 
 #saikin-pic{
-  padding: 20px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 12px;
   justify-content: space-between;
-  margin-top:10px;
 }
 
 @media(min-width: 550px){
