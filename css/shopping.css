@@ -44,7 +44,8 @@ body {
     width: 100%; }
 
 #pc_header_li {
-  margin-top: 30px; }
+  margin-top: 30px;
+  text-align: right; }
   #pc_header_li li {
     display: inline-block;
     list-style: none;
@@ -69,7 +70,8 @@ body {
     width: 47%; }
     @media (min-width: 550px) {
       #newitems .newitems-box .flex-container {
-        width: 30%; } }
+        width: 30%;
+        padding: 7px; } }
 
 @media (max-width: 549px) {
   #pc_newitem {
@@ -80,12 +82,9 @@ body {
     margin-top: 30px; } }
 @media (min-width: 550px) {
   #sp_newitem {
-    display: none; }
-
-  #pc_newitem {
-    margin-top: 30px; } }
+    display: none; } }
 .sp-title img {
-  height: 20px;
+  height: 12px;
   margin: 32px auto; }
 
 #popularitems .popularitems-box {
@@ -98,7 +97,8 @@ body {
     margin: auto; }
     @media (min-width: 550px) {
       #popularitems .popularitems-box .flex-container {
-        width: 30%; } }
+        width: 30%;
+        padding: 7px; } }
 
 @media (max-width: 549px) {
   #pc_popularitems {
@@ -107,6 +107,9 @@ body {
   #sp_popularitems {
     text-align: center; } }
 @media (min-width: 550px) {
+  #pc_popularitems {
+    margin: 15px auto; }
+
   #sp_popularitems {
     display: none; } }
 #shopping-guide {
@@ -118,9 +121,14 @@ body {
 
 .guide-box .container {
   background-color: #ffffff; }
+  .guide-box .container h6 {
+    margin-bottom: 2px; }
+  .guide-box .container p {
+    margin-bottom: 2px; }
   @media (min-width: 551px) {
     .guide-box .container {
-      width: 48%; } }
+      width: 48%;
+      padding: 15px; } }
 
 #shopping-guide h5 {
   color: #887f69;
@@ -128,10 +136,14 @@ body {
   margin-top: 10px; }
 #shopping-guide h6 {
   color: #887f69;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 10px; }
+
+#pc_newitem img {
+  margin: 15px auto; }
 
 #pc_guide img {
-  margin-top: 10px; }
+  margin: 15px auto; }
 
 @media (max-width: 550px) {
   .guide-box {
@@ -171,14 +183,17 @@ body {
 
 .sidebar {
   background-color: #887f69;
-  padding: 10px 15px;
-  margin-bottom: 5px; }
+  padding: 10px 15px; }
+
+.right p {
+  text-align: left;
+  font-size: 12px; }
 
 #navigation .pagelink .sidebar {
   background-image: url("../images/top/next_icon.png");
   background-size: 10px 10px;
   background-repeat: no-repeat;
-  background-position: right 10px top 10px; }
+  background-position: right 10px top 16px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dpx) {
     #navigation .pagelink .sidebar {
       background-image: url("../images/top/next_icon.png"); } }
@@ -187,7 +202,7 @@ body {
   background-image: url("../images/top/down_icon.png");
   background-size: 10px 10px;
   background-repeat: no-repeat;
-  background-position: right 10px top 10px; }
+  background-position: right 10px top 16px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dpx) {
     .category .sidebar {
       background-image: url("../images/top/down_icon.png"); } }
@@ -219,7 +234,6 @@ body {
   background-color: #ffffff;
   padding: 10px;
   width: fit-content;
-  margin-top: 10px;
   margin-bottom: 10px;
   text-align: center; }
 
@@ -261,9 +275,13 @@ body {
 
   .more-btn {
     min-margin: 88px; } }
+@media (min-width: 550px) {
+  div#pc_guide.pc-title {
+    margin: 15px auto; } }
 .footer {
   text-align: center;
-  font: 12px; }
+  font: 12px;
+  margin: 0 15px; }
   .footer p {
     color: #b8b4ac;
     font: 10px; }
@@ -273,7 +291,12 @@ body {
     display: none; }
 
   #sp_pagetop_btn {
-    text-align: center; }
+    text-align: center;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #e2ddd4;
+    margin: 10px 15px 40px;
+    padding: 20px; }
     #sp_pagetop_btn img {
       width: 35%; } }
 @media (min-width: 551px) {
@@ -287,7 +310,8 @@ body {
     border-bottom-style: solid;
     border-bottom-color: #e2ddd4;
     margin-bottom: 40px;
-    padding: 20px; } }
+    padding: 20px;
+    margin: 10px 70px; } }
 .owl-dot {
   display: inline-block; }
 
@@ -310,7 +334,8 @@ body {
   line-height: 2em;
   color: #887f69;
   background-color: #e8e4da;
-  padding: 10px; }
+  padding: 10px;
+  border-radius: 5px; }
 
 #category-pic {
   padding: 10px 0; }
@@ -333,7 +358,8 @@ body {
   #ichiran .flex-container {
     width: 30%;
     background-color: #ffffff;
-    margin: auto; } }
+    margin: auto;
+    padding: 7px; } }
 @media (max-width: 549px) {
   #ichiran .flex-container {
     width: 47%;
@@ -354,10 +380,7 @@ body {
 
 @media (min-width: 550px) {
   .sp_saikin {
-    display: none; }
-
-  .pc_saikin {
-    padding: 20px 0; } }
+    display: none; } }
 @media (max-width: 549px) {
   .pc_saikin {
     display: none; }
@@ -365,7 +388,7 @@ body {
   .sp_saikin img {
     display: block;
     margin: 37px auto;
-    height: 30px; } }
+    height: 15px; } }
 #saikin-pic {
   display: flex;
   flex-direction: row;
@@ -377,7 +400,8 @@ body {
   #saikin-pic .flex-container {
     width: 30%;
     background-color: #ffffff;
-    margin: auto; } }
+    margin: auto;
+    padding: 7px; } }
 @media (max-width: 549px) {
   #saikin-pic .flex-container {
     width: 50%;
@@ -387,12 +411,14 @@ body {
     margin-bottom: 10px; }
     #saikin-pic .flex-container img {
       max-width: 93%; } }
+@media (min-width: 550px) {
+  .pc-title {
+    margin: 15px auto; } }
 #product {
   background-color: #ffffff;
-  padding-bottom: 10px; }
+  padding: 10px 50px 50px 50px; }
   #product .product-midashi {
-    margin: 30px 30px;
-    padding-bottom: 50px;
+    margin: 30px 0;
     padding-top: 20px; }
 
 .product-name {
@@ -415,10 +441,8 @@ body {
   cursor: pointer;
   float: left; }
 
-.product_container {
-  margin: 10px; }
-  .product_container ul {
-    list-style: none; }
+.product_container ul {
+  list-style: none; }
 
 #product-name {
   float: left;
@@ -426,7 +450,8 @@ body {
   font-weight: bold; }
 
 #product-number {
-  float: right; }
+  float: right;
+  color: #e2ddd4; }
 
 @media (max-width: 550px) {
   #product-number {
@@ -454,7 +479,8 @@ body {
 
   #display_img img {
     width: 100%;
-    float: left; }
+    float: left;
+    padding: 5px 0 5px 0; }
 
   #list_img {
     float: right;
@@ -463,7 +489,7 @@ body {
   #list_img img {
     width: 50%;
     float: left;
-    padding: 3px; } }
+    padding: 5px; } }
 @media (max-width: 550px) {
   #display_img {
     width: 100%; }
