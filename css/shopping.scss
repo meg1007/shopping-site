@@ -200,6 +200,7 @@ background-color: #f9f8f6;
       }
       p{
         margin-bottom: 2px;
+        font-size:12px;
       }
       @media(min-width: 551px){
       width: 48%;
@@ -215,11 +216,13 @@ background-color: #f9f8f6;
     color: $brown;
     font-weight: bold;
     margin-top: 10px;
+    font-size:16px;
   }
   h6{
     color: $brown;
     font-weight: bold;
     margin-top: 10px;
+    font-size:12px;
   }
 }
 #pc_newitem{
@@ -296,7 +299,6 @@ background-color: #f9f8f6;
   .pagelink{
    .sidebar{
     background-image: url("../images/top/next_icon.png");
-    background-size: 10px 10px;
   
     @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dpx){
       background-image: url("../images/top/next_icon.png");
@@ -310,7 +312,6 @@ background-color: #f9f8f6;
 .category{
   .sidebar{
     background-image: url("../images/top/down_icon.png");
-    background-size: 10px 10px;
     
     @media screen and (-webkit-min-device-pixel-ratio:2),(min-resolution: 2dpx){
       background-image: url("../images/top/down_icon.png");
@@ -422,13 +423,16 @@ background-color: #f9f8f6;
 
 .footer{
   text-align: center;
-  font: 12px;
+  font-size: 12px;
   margin: 0 15px;
   p{
-    color: #b8b4ac;
-    font: 10px;
+    margin-bottom: 20px;
   }
 }
+#copyright{
+    color: #b8b4ac;
+    font-size: 10px;
+  }
 @media(max-width: 550px){
   #pc_pagetop_btn{
     display: none;
@@ -458,7 +462,7 @@ background-color: #f9f8f6;
     border-bottom-color: $bage;
     margin-bottom: 40px;
     padding: 20px;
-    margin: 10px 70px;
+    margin: 10px 110px;
   }
 }
 
@@ -489,6 +493,7 @@ background-color: #f9f8f6;
   background-color: #e8e4da;
   padding: 10px;
   border-radius: 5px;
+  margin-bottom:10px;
 }
 #category-pic{
   padding: 10px 0;
@@ -516,15 +521,16 @@ background-color: #f9f8f6;
   #ichiran .flex-container{
     width: 30%;
     background-color: #ffffff;
-    margin: auto;
+    margin: 3px;
     padding: 7px;
   }
 }
 @media(max-width: 549px){
   #ichiran .flex-container{
-    width: 47%;
+    width: 48%;
     background-color: #ffffff;
     justify-content: flex-start;
+    margin:3px;
   }
 }     
 .button{
@@ -764,6 +770,11 @@ thead{
   }
   .textbox{
     float: right;
+    width: 170px;
+    height: 40px;
+    position: relative;
+    top: -22px;
+    left: 0px;
   }
 }
 #price{
@@ -775,7 +786,6 @@ thead{
 }
 .quantity{
   margin-top: 20px;
-  border-bottom: solid 1px #e2ddd4;
 }
 .quantity-img{
   float: left;
@@ -789,15 +799,18 @@ thead{
     border-bottom-color: $brown;
     padding-bottom: 5px;
     font-weight: bold;
+    border-top: solid 1px #e2ddd4;
+    padding-top: 30px;
   }
 }
 .shouhinn-title{
     p{
-    font-size: 17px;
+    font-size: 16px;
     color: $brown;
     font-weight: bold;
     }
   }
+  
 @media(min-width: 551px){
   .price{
   float:left;
@@ -836,4 +849,9 @@ thead{
 
 #saikin-area{
   background-color:white;
+}
+#product-column{
+  p{
+    font-size:14px;
+  }
 }

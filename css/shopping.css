@@ -124,7 +124,8 @@ body {
   .guide-box .container h6 {
     margin-bottom: 2px; }
   .guide-box .container p {
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    font-size: 12px; }
   @media (min-width: 551px) {
     .guide-box .container {
       width: 48%;
@@ -133,11 +134,13 @@ body {
 #shopping-guide h5 {
   color: #887f69;
   font-weight: bold;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 16px; }
 #shopping-guide h6 {
   color: #887f69;
   font-weight: bold;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 12px; }
 
 #pc_newitem img {
   margin: 15px auto; }
@@ -191,7 +194,6 @@ body {
 
 #navigation .pagelink .sidebar {
   background-image: url("../images/top/next_icon.png");
-  background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: right 10px top 16px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dpx) {
@@ -200,7 +202,6 @@ body {
 
 .category .sidebar {
   background-image: url("../images/top/down_icon.png");
-  background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: right 10px top 16px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dpx) {
@@ -280,11 +281,14 @@ body {
     margin: 15px auto; } }
 .footer {
   text-align: center;
-  font: 12px;
+  font-size: 12px;
   margin: 0 15px; }
   .footer p {
-    color: #b8b4ac;
-    font: 10px; }
+    margin-bottom: 20px; }
+
+#copyright {
+  color: #b8b4ac;
+  font-size: 10px; }
 
 @media (max-width: 550px) {
   #pc_pagetop_btn {
@@ -311,7 +315,7 @@ body {
     border-bottom-color: #e2ddd4;
     margin-bottom: 40px;
     padding: 20px;
-    margin: 10px 70px; } }
+    margin: 10px 110px; } }
 .owl-dot {
   display: inline-block; }
 
@@ -335,7 +339,8 @@ body {
   color: #887f69;
   background-color: #e8e4da;
   padding: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 10px; }
 
 #category-pic {
   padding: 10px 0; }
@@ -358,13 +363,14 @@ body {
   #ichiran .flex-container {
     width: 30%;
     background-color: #ffffff;
-    margin: auto;
+    margin: 3px;
     padding: 7px; } }
 @media (max-width: 549px) {
   #ichiran .flex-container {
-    width: 47%;
+    width: 48%;
     background-color: #ffffff;
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+    margin: 3px; } }
 .button {
   display: flex;
   flex-direction: row;
@@ -547,7 +553,12 @@ thead {
   border-top-width: 1px;
   line-height: 35px; }
 .price .textbox {
-  float: right; }
+  float: right;
+  width: 170px;
+  height: 40px;
+  position: relative;
+  top: -22px;
+  left: 0px; }
 
 #price {
   border-bottom: solid 1px;
@@ -557,8 +568,7 @@ thead {
   border-top: solid 1px #e2ddd4; }
 
 .quantity {
-  margin-top: 20px;
-  border-bottom: solid 1px #e2ddd4; }
+  margin-top: 20px; }
 
 .quantity-img {
   float: left; }
@@ -569,10 +579,12 @@ thead {
   border-bottom: solid 1px;
   border-bottom-color: #887f69;
   padding-bottom: 5px;
-  font-weight: bold; }
+  font-weight: bold;
+  border-top: solid 1px #e2ddd4;
+  padding-top: 30px; }
 
 .shouhinn-title p {
-  font-size: 17px;
+  font-size: 16px;
   color: #887f69;
   font-weight: bold; }
 
@@ -607,5 +619,8 @@ thead {
 
 #saikin-area {
   background-color: white; }
+
+#product-column p {
+  font-size: 14px; }
 
 /*# sourceMappingURL=shopping.css.map */

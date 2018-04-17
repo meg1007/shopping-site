@@ -48,7 +48,7 @@
                 </ul>       
         </div>
         <script>
-            $(document).ready(function(){
+        $(document).ready(function(){
             $("#menu").click(function(){
                 $(".sp_menu_toggle").slideToggle();
             });
@@ -122,16 +122,16 @@
                         <img class="u-max-full-width" src="images/products/title_color.png" alt="color/size">
                     </div>
                     <table border="1">
-                        <thead>
+                        <tr>
                             <th></th>
                             <th>カラー１</th>
                             <th>カラー２</th>
-                        </thead>
-                        <tbody>
+                        </tr>
+                        <tr>
                             <th>サイズ</th>
-                            <td><input type="checkbox" name="" value="1"></td>
-                            <td><input type="checkbox" name="" value="1"></td>
-                        </tbody>
+                            <td><input type="checkbox" name="checkbox" value="1"></td>
+                            <td><input type="checkbox" name="checkbox" value="1"></td>
+                        </tr>
                     </table>
                     <div id="product-column" class="clearfix">
                         <div class="price">
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                         <div class="add-cart">
-                            <img class="u-max-full-width" src="images/products/add_to_cart.png">
+                            <img class="u-max-full-width" src="images/products/add_to_cart.png" alt="add cart">
                         </div>
                     
                     <div class="shouhinn-setumei">
@@ -170,7 +170,7 @@
             </div>    
                 <!--product-->
                     
-                <div class="pc_saikin">
+                <div class="pc_saikin pc-title">
                     <img class="u-max-full-width" src="images/list/recent_pro_pc.png" alt="recent item">
                 </div>
                 
@@ -301,11 +301,10 @@
             <img class="u-full-width" src="images/top/pagetop.png" alt="page top">
         </div>
             
-        <div class="footer">
-            <tr>特定商取引に基づく表記・プライバシーポリシー・ マイページ</tr/>
-            <p>copyright©APPLE BERRY all right reserved</p>
+         <div class="footer">
+            <p>特定商取引に基づく表記・プライバシーポリシー・マイページ</p>
+            <div id="copyright">copyright©APPLE BERRY all right reserved</div>
         </div>
-        
         
     </footer>
 </body>

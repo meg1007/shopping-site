@@ -23,6 +23,15 @@
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <!-- Owl Carouselを動作させるために追加 -->
     <script src="shopping-carousel.js"></script>
+    <script>
+    $(function(){
+        $(document).ready(function(){
+            $("#menu").click(function(){
+                $(".sp_menu_toggle").slideToggle();
+            });
+        });
+    });
+    </script>
 </head>
 <body>
     <header>
@@ -52,13 +61,7 @@
                     </li>
                 </ul>       
         </div>
-        <script>
-            $(document).ready(function(){
-            $("#menu").click(function(){
-                $(".sp_menu_toggle").slideToggle();
-            });
-        });
-        </script>
+
         
         <!-- sp_header -->
         
@@ -85,7 +88,7 @@
     <div class="container">
         <div class="row">
             <div id="main" class="nine columns">
-                <div class="owl-carousel" "owl-theme">
+                <div class="owl-carousel owl-theme">
                     <div><img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="banner"></div>
                     <div><img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="banner"></div>
                     <div><img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="banner"></div>
@@ -94,7 +97,7 @@
                 <!--eyecatch-->
                 
                 <div id="newitems">
-                    <div id="pc_newitem"　class="pc-title">
+                    <div id="pc_newitem" class="pc-title">
                         <img class="u-max-full-width" src="images/top/title_newitems.png" alt="new items">   
                     </div>
                     
@@ -185,7 +188,7 @@
                         <img class="u-max-full-width" src="images/top/title_guide.png" alt="shopping guide">
                     </div>
                     <div id="sp_guide" class="sp-title">
-                        <img class="u-max-full-width", "more" src="images/top_sp/title_guide.png" alt="shopping guide"
+                        <img class="u-max-full-width more" src="images/top_sp/title_guide.png" alt="shopping guide"
                         srcset="images/top_sp/title_guide@2x.png 2x">
                     </div>
                 <div class="guide-box">
@@ -240,7 +243,7 @@
                 </div>
                 <div id="shop-introduction">
                     <div id="about">
-                        <div class="sidebar"><img class="u-max-full-width","more" src="images/top/about.png" alt="about"></div>
+                        <div class="sidebar"><img class="u-max-full-width more" src="images/top/about.png" alt="about"></div>
                         <div class="container">    
                             <div class="clearfix">
                                 <div class="side-pic">
@@ -249,7 +252,7 @@
                                 <div class="right">
                                     <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明</p>
                                     <div class="more">
-                                        <img class="u-max-full-width","more-btn" src="images/top/more_btn.png" alt="more">
+                                        <img class="u-max-full-width more-btn" src="images/top/more_btn.png" alt="more">
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +268,7 @@
                             <div class="right">
                                 <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明</p>
                                 <div class=more>
-                                    <img class="u-max-full-width","more-btn" src="images/top/more_btn.png" alt="more">
+                                    <img class="u-max-full-width more-btn" src="images/top/more_btn.png" alt="more">
                                 </div>
                             </div>
                         </div>
@@ -285,12 +288,11 @@
         </div>
             
         <div class="footer">
-            <tr>特定商取引に基づく表記・プライバシーポリシー・マイページ</tr/>
-            <p>copyright©APPLE BERRY all right reserved</p>
+            <p>特定商取引に基づく表記・プライバシーポリシー・マイページ</p>
+            <div id="copyright">copyright©APPLE BERRY all right reserved</div>
         </div>
         
         
     </footer>
 </body>
-
 </html>
