@@ -119,7 +119,7 @@ background-color: #f9f8f6;
     
     .flex-container{
     background-color: #ffffff;
-    margin: auto;
+    margin: 3px;
     width: 47%;
       @media(min-width: 550px){
       width: 30%;  
@@ -193,8 +193,9 @@ background-color: #f9f8f6;
   }
 
 .guide-box{
-  .container{
+  .guide-container{
       background-color: #ffffff;
+      margin: 5px;
       h6{
         margin-bottom: 2px;
       }
@@ -240,8 +241,9 @@ background-color: #f9f8f6;
   .guide-box{
     flex-direction: column;
     width: 100%;
-    .container{
-      margin-bottom: 10px;
+    .guide-container{
+      margin: 5px 0;
+      padding: 15px;
     }
   }
 }
@@ -289,8 +291,20 @@ background-color: #f9f8f6;
 
 .sidebar{
   background-color: $brown;
-  padding: 10px 15px;
+  height: 44px;
 }
+.sidebar img{
+    margin: 15px 10px;
+  }
+@media(max-width:550px){
+  .sidebar{
+    height:44px;
+  }
+  .sidebar img{
+    margin: 15px 10px;
+  }
+}
+
 .right p{
   text-align:left;
   font-size: 12px;
@@ -327,9 +341,12 @@ background-color: #f9f8f6;
   li{
     list-style: none;
     font-size: 12px;
+    height:10px;
     a{
      text-decoration: none; 
      color: black;
+     line-height: 10px;
+     vertical-align: middle;
     }
   }
 }
@@ -346,7 +363,7 @@ background-color: #f9f8f6;
     align-items: center;
     }
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 0px top 10px;
   }
 }
 
@@ -855,3 +872,28 @@ thead{
     font-size:14px;
   }
 }
+
+
+  .owl-dot{
+  display: inline-block;
+  }
+  .owl-theme .owl-dots .owl-dot span{
+    width: 40px;
+    height: 4px;
+    background: #b0b0b0;
+    display: block;
+    margin: 5px;
+    border-radius: 0;
+  }
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    width: 40px;
+    height: 4px;
+    background: #9d1a2d;
+    display: block;
+    margin: 5px;
+  }
+
+.seidebar img{
+  margin: 15px 10px;
+}
+

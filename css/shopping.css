@@ -66,7 +66,7 @@ body {
   font-size: 12px; }
   #newitems .newitems-box .flex-container {
     background-color: #ffffff;
-    margin: auto;
+    margin: 3px;
     width: 47%; }
     @media (min-width: 550px) {
       #newitems .newitems-box .flex-container {
@@ -119,15 +119,16 @@ body {
     display: -webkit-flex;
     box-sizing: border-box; }
 
-.guide-box .container {
-  background-color: #ffffff; }
-  .guide-box .container h6 {
+.guide-box .guide-container {
+  background-color: #ffffff;
+  margin: 5px; }
+  .guide-box .guide-container h6 {
     margin-bottom: 2px; }
-  .guide-box .container p {
+  .guide-box .guide-container p {
     margin-bottom: 2px;
     font-size: 12px; }
   @media (min-width: 551px) {
-    .guide-box .container {
+    .guide-box .guide-container {
       width: 48%;
       padding: 15px; } }
 
@@ -152,8 +153,9 @@ body {
   .guide-box {
     flex-direction: column;
     width: 100%; }
-    .guide-box .container {
-      margin-bottom: 10px; } }
+    .guide-box .guide-container {
+      margin: 5px 0;
+      padding: 15px; } }
 @media (max-width: 549px) {
   #pc_guide {
     display: none; }
@@ -186,8 +188,17 @@ body {
 
 .sidebar {
   background-color: #887f69;
-  padding: 10px 15px; }
+  height: 44px; }
 
+.sidebar img {
+  margin: 15px 10px; }
+
+@media (max-width: 550px) {
+  .sidebar {
+    height: 44px; }
+
+  .sidebar img {
+    margin: 15px 10px; } }
 .right p {
   text-align: left;
   font-size: 12px; }
@@ -213,10 +224,13 @@ body {
   padding: 10px 15px; }
   .categories li {
     list-style: none;
-    font-size: 12px; }
+    font-size: 12px;
+    height: 10px; }
     .categories li a {
       text-decoration: none;
-      color: black; }
+      color: black;
+      line-height: 10px;
+      vertical-align: middle; }
 
 .categories li {
   height: 38px;
@@ -225,7 +239,7 @@ body {
   border-bottom: 1px solid #f0f8f6;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: right center; }
+  background-position: right 0px top 10px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dpx) {
     .categories li {
       background-image: url("../images/top/next_icon_gray.png");
@@ -622,5 +636,26 @@ thead {
 
 #product-column p {
   font-size: 14px; }
+
+.owl-dot {
+  display: inline-block; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 4px;
+  background: #b0b0b0;
+  display: block;
+  margin: 5px;
+  border-radius: 0; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  width: 40px;
+  height: 4px;
+  background: #9d1a2d;
+  display: block;
+  margin: 5px; }
+
+.seidebar img {
+  margin: 15px 10px; }
 
 /*# sourceMappingURL=shopping.css.map */
